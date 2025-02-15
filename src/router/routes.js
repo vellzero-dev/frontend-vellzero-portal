@@ -3,7 +3,9 @@ const routes = [
     path: '/',
     component: () => import('layouts/MainLayout.vue'),
     children: [
-      { path: '', component: () => import('pages/IndexPage.vue') }
+      { path: 'main', component: () => import('pages/IndexPage.vue') },
+      { path: 'admin', component: () => import('pages/AdminPage.vue') },
+      { path: 'grafana', component: () => import('pages/GrafanaPage.vue') }
     ]
   },
 
